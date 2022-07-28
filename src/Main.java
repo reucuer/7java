@@ -34,10 +34,13 @@ public class Main {
             if (A[0] == A[1] || A[0] == A[2] || A[1] == A[2])  bool_shit = true;
         return bool_shit;
     }
-    public static boolean[] max_number(int[] A){
+    public static boolean[] max_number(int[] A, String[] words){
         int max_i = 0;
+        for(int i = 0; i < words.length; i++){
+            if (words[i].charAt(0) != '-') max_i = i;
+        }
         for (int i = 0; i < A.length; i++){
-            if (A[i] > A[max_i]) max_i = i;
+            if (A[i] > A[max_i] && words[i].charAt(0) != '-') max_i = i;
             //System.out.println("ttttt" + max_i);
         }
         boolean[] B = new boolean[3];
@@ -45,7 +48,7 @@ public class Main {
         B[1] = false;
         B[2] = false;
         for (int i = 0; i < A.length; i++){
-            if (A[i] == A[max_i]) B[i] = true;
+            if (A[i] == A[max_i] && words[i].charAt(0) != '-') B[i] = true;
         }
         return B;
     }
@@ -91,7 +94,7 @@ public class Main {
         }
         //print_mas_string(words);
         //print_mas_int(words_L);
-        boolean[] BB = max_number(words_L);
+        boolean[] BB = max_number(words_L, words);
         print_mas_bool(BB);
         int x = max_zolot(BB, words_L, words);
 
