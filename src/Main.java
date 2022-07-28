@@ -12,11 +12,28 @@ import java.math.BigInteger;
 
 
 public class Main {
+    public static void print_mas_string(String[] words){
+        for(int i = 0; i < words.length; i++){
+            System.out.println(words[i]);
+        }
+    }
+    public static void print_mas_int(int[] words){
+        for(int i = 0; i < words.length; i++){
+            System.out.println(words[i]);
+        }
+    }
     public static void main(String[] args) throws FileNotFoundException, IOException {
         String path = "INPUT.TXT";
         File file = new File(path);
         Scanner sc = new Scanner(file);
-        int N = sc.nextInt();
+        String N = sc.nextLine();
+        String[] words = N.split(" ");
+        int words_L[] = new int[words.length];
+        for(int i = 0; i < words.length; i++){
+            words_L[i] = words[i].length();
+        }
+        print_mas_string(words);
+        print_mas_int(words_L);
         String answer = "";
         answer = String.valueOf(answer);
         FileWriter writerS = new FileWriter("OUTPUT.TXT", false);
