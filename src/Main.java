@@ -49,6 +49,36 @@ public class Main {
         }
         return B;
     }
+    public static int max_number2(int[] A){
+        int max_i = 0;
+        for (int i = 0; i < A.length; i++){
+            if (A[i] > A[max_i]) max_i = i;
+            System.out.println("ttttt" + max_i);
+        }
+        return max_i;
+    }
+    public static int max_zolot(boolean[] A, int[] int_words, String[] words){
+        int x = 0;
+        int max = 0;
+        for(int i = 0; i < A.length; i++){
+            if (A[i] == true){
+                max = int_words[i];
+                break;
+            }
+        }
+        char[] C = new char[3];
+        for(int i = 0; i < C.length; i++){
+            if (A[i] == true) C[i] = words[i].charAt(0);
+            System.out.println(C[i]);
+        }
+
+        int[] F = new int[3];
+        for(int i = 0; i < F.length; i++){
+            F[i] = (int)C[i];
+        }
+        x = max_number2(F);
+       return x;
+    }
     public static void main(String[] args) throws FileNotFoundException, IOException {
         String path = "INPUT.TXT";
         File file = new File(path);
@@ -61,10 +91,11 @@ public class Main {
         }
         //print_mas_string(words);
         //print_mas_int(words_L);
-        print_mas_bool(max_number(words_L));
+        boolean[] BB = max_number(words_L);
+        print_mas_bool(BB);
+        int x = max_zolot(BB, words_L, words);
 
-
-        String answer = "";
+        String answer = "" + words[x];
         answer = String.valueOf(answer);
         FileWriter writerS = new FileWriter("OUTPUT.TXT", false);
         writerS.write(String.valueOf(answer));
