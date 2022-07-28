@@ -4,6 +4,7 @@
     <list default="true" id="f0fc4463-bf36-45b8-8805-8cac9a616bfe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2/Main.class" afterPath="$PROJECT_DIR$/out/production/2/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/INPUT.TXT" afterPath="$PROJECT_DIR$/INPUT.TXT" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +24,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+            <state relative-caret-position="365">
+              <caret line="63" column="10" lean-forward="false" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/INPUT.TXT">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -575,12 +576,12 @@
       <workItem from="1620642774505" duration="5003000" />
       <workItem from="1628402952485" duration="3307000" />
       <workItem from="1653825453058" duration="87000" />
-      <workItem from="1659006251300" duration="750000" />
+      <workItem from="1659006251300" duration="2937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54837000" />
+    <option name="totallyTimeSpent" value="57024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -852,15 +853,15 @@
     <entry file="file://$PROJECT_DIR$/INPUT.TXT">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="365">
+          <caret line="63" column="10" lean-forward="false" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
